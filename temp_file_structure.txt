@@ -1,0 +1,15 @@
+```
+PlayIt/
+├── manifest.json          # Extension configuration
+├── content.js            # Script that injects button on IMDb
+├── content.css           # Styles for the injected button
+├── popup.html            # Extension popup interface
+├── icons/               # Extension icons
+│   ├── PlayIt.png
+│   └── icon.svg
+├── INSTALLATION.md       # Detailed installation guide
+├── DEBUGGING.md         # Troubleshooting guide
+├── install.sh           # Installation script
+├── LICENSE              # MIT License
+└── README.md            # This file
+```

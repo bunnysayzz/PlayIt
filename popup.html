@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play It</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 280px;
+            height: 300px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 16px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .logo {
+            margin-bottom: 8px;
+        }
+
+        .logo img {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 12px;
+            color: #cbd5e1;
+            font-weight: 500;
+        }
+
+
+
+        .instructions {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 11px;
+            line-height: 1.4;
+            backdrop-filter: blur(12px);
+            flex: 1;
+        }
+
+        .instructions h3 {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #0ea5e9;
+        }
+
+        .instructions ol {
+            padding-left: 16px;
+            margin: 0;
+        }
+
+        .instructions li {
+            margin-bottom: 6px;
+            color: #cbd5e1;
+        }
+
+        .instructions li strong {
+            color: #f8fafc;
+        }
+
+        .demo-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .demo-button {
+            background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 12px;
+            padding-top: 12px;
+            padding-bottom: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 10px;
+            color: #64748b;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .links a {
+            color: #0ea5e9;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .links a:hover {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="icons/PlayIt.png" alt="Play It" width="48" height="48">
+            </div>
+            <h1>Play It</h1>
+            <p>Watch movies & TV shows from multiple sources</p>
+        </div>
+        
+
+        
+        <div class="instructions">
+            <h3>How to use:</h3>
+            <ol>
+                <li><strong>Go to IMDb:</strong> Visit any IMDb movie or TV show page</li>
+                <li><strong>Find the button:</strong> Look for "Play It" above "Add to Watchlist"</li>
+                <li><strong>Click Play It:</strong> Opens streaming interface in new window</li>
+                <li><strong>Choose source:</strong> Select from multiple streaming providers</li>
+            </ol>
+        </div>
+
+
+        
+        <div class="footer">
+            <div>Version 1.0.0 • Play It Extension</div>
+            <div class="links">
+                <a href="https://github.com/bunnysayzz/PlayIt.git" target="_blank">GitHub</a>
+                <span>•</span>
+                <a href="https://github.com/bunnysayzz" target="_blank">🐰 MacBunny</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html> 

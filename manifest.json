@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Play It - IMDb Movie Streaming",
+  "version": "1.0.0",
+  "description": "Add a Play It button to IMDb pages to watch movies and TV shows from multiple sources",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.imdb.com/*",
+    "https://www.omdbapi.com/*",
+    "https://vidsrc.net/*",
+    "https://multiembed.mov/*",
+    "https://www.2embed.cc/*",
+    "https://embed.su/*",
+    "https://player.autoembed.cc/*",
+    "https://soap2dayto.win/*",
+    "https://vidsrc.cc/*",
+    "https://vidlink.pro/*",
+    "https://vidfast.pro/*",
+    "https://player.videasy.net/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Play It - IMDb Streaming",
+    "default_icon": {
+      "16": "icons/PlayIt.png",
+      "32": "icons/PlayIt.png",
+      "48": "icons/PlayIt.png",
+      "128": "icons/PlayIt.png"
+    }
+  },
+  "icons": {
+    "16": "icons/PlayIt.png",
+    "32": "icons/PlayIt.png",
+    "48": "icons/PlayIt.png",
+    "128": "icons/PlayIt.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.imdb.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ]
+} 
