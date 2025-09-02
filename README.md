@@ -4,6 +4,16 @@
 
 PlayIt is a simple Chrome extension that adds a "Play It" button to every IMDb movie and TV show page. Click the button to watch your content from multiple streaming sources.
 
+## 📸 Screenshots
+
+### PlayIt Button on IMDb
+![PlayIt Button](playitbutton.png)
+*The "Play It" button appears above the "Add to Watchlist" button on IMDb movie pages*
+
+### Streaming Interface
+![PlayIt Interface](Playitinterface.png)
+*Choose from multiple streaming sources in the PlayIt interface*
+
 ## ✨ What It Does
 
 - Adds a **"Play It"** button to IMDb movie/TV pages
@@ -45,6 +55,8 @@ PlayIt/
 ├── content.js            # Adds button to IMDb
 ├── content.css           # Button styling
 ├── popup.html            # Extension popup
+├── playitbutton.png      # Screenshot of button
+├── Playitinterface.png   # Screenshot of interface
 ├── icons/               # Extension icons
 │   ├── PlayIt.png
 │   └── icon.svg
@@ -96,11 +108,6 @@ PlayIt is a search tool that connects to publicly available streaming sources. W
 MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
-
-## 👨‍💻 Author
-
-**GitHub:** [@bunnysayzz](https://github.com/bunnysayzz)
-**Repository:** [PlayIt](https://github.com/bunnysayzz/PlayIt.git)
 
 **Made with ❤️ for movie lovers**
 
